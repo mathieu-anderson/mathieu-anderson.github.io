@@ -1,0 +1,49 @@
+body {
+  color:#414141;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: auto;
+  max-width: 650px;
+}
+
+h1 {
+  background-color: #EEEEEE;
+  margin: auto;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 14px;
+  font-size: 30px;
+}
+
+h2 {
+  max-width: 650px;
+  font-size: 20px;
+  padding: 40px 0px 20px 0px;
+}
+
+p {
+  max-width: 650px;
+}
+
+a {
+  color: #07057E;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:active {
+    text-decoration: none;
+    font-weight: bold;
+}
