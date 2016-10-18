@@ -9,9 +9,7 @@ html {
 .header {
   background-color: #FBFBFC;
   display: flex;
-}
-
-.header {
+  margin: 10px;
   font-size: 3em;
   white-space: nowrap;
   text-align: center;
@@ -29,19 +27,23 @@ h1 {
 }
 
 .content {
-background-color: #FBFBFC;
+background-color: #333333;
 }
 
 .image {
+  background-color: #FBFBFC;
   text-align: center;
+  margin: 10px;
 }
 
 .nav {
+  background-color: #333333;
   display: flex;
+  margin: 10px;
 }
 
-h4 {
-  padding: 10px 20px 0px 20px;
+.button {
+  background-color: #FBFBFC;
 }
 
 a {
