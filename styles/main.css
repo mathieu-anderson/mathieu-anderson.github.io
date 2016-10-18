@@ -1,5 +1,5 @@
 html {
-  background-color: #85af92;
+    background-color: #85af92;
 }
 
 * {
@@ -8,72 +8,69 @@ html {
 }
 
 .title {
-  text-align: center;
-  text-align: center;
-  margin: 10px;
+    text-align: center;
+    text-align: center;
+    margin: 10px;
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 15px;
-  padding-bottom: 3px;
-  border-top: 2px solid black;
-  border-bottom : 2px solid black;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 15px;
+    padding-bottom: 3px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 2em;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .content {
-background-color: #85af92;
-
+    background-color: #85af92;
 }
 
 .image {
-  background-color: #85af92;
-  text-align: center;
-  padding: 10px;
+    background-color: #85af92;
+    text-align: center;
+    padding: 10px;
 }
 
 .nav {
-  background-color: #85af92;
-  text-align: center;
+    background-color: #85af92;
+    text-align: center;
 }
 
 .nav_button {
-  width: 33.33%;
-  font-size: 1.5em;
-  background-color: #85af92;
-  border-bottom : 1px solid black;
-
+    width: 33.33%;
+    font-size: 1.5em;
+    background-color: #85af92;
+    border-bottom: 1px solid black;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 a:hover {
-  color: #555;
+    color: #555;
 }
 
-
 .blog_icon {
-  font-family: 'Oswald';
-  font-weight: bold;
-  font-size: 1.5em;
-  padding: 30px;
-  margin-top: 30px;
-  background-color: blue;
-  text-align: center;
-  background-color: #85af92;
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: blue;
+    text-align: center;
+    background-color: #85af92;
 }
 
 .blog_text {
-  line-height: 1.8;
-  background-color: #FBFBFC;
-  padding: 30px;
-  margin-top: 30px;
+    line-height: 1.8;
+    background-color: #FBFBFC;
+    padding: 30px;
+    margin-top: 30px;
 }
