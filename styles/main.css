@@ -18,7 +18,7 @@ html {
 }
 
 i {
-  padding-top: 43px;
+  padding-top: 35px;
   padding-left: 35px;
 }
 
@@ -32,8 +32,16 @@ h1 {
 background-color: #FBFBFC;
 }
 
+.image {
+  text-align: center;
+}
+
 .nav {
   display: flex;
+}
+
+h4 {
+  padding: 10px 20px 0px 20px;
 }
 
 a {
