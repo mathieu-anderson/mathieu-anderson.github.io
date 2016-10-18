@@ -1,9 +1,5 @@
 html {
   background-color: #85af92;
-}
-
-.container {
-  padding: 10px;
   font-family: 'Rubik', sans-serif;
   box-sizing: border-box;
 }
@@ -26,7 +22,9 @@ h1 {
 }
 
 .content {
+padding: 10px;
 width: 100%;
+margin: 10px;
 background-color: ##85af92;
 margin: auto;
 
@@ -63,6 +61,17 @@ a {
   text-decoration: none;
 }
 
+.blog_post {
+
+}
+
+.blog_text {
+  background-color: #FBFBFC;
+  padding: 10px;
+  float: right;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
 @media (min-width: 550px) {
 
   h1 {
@@ -80,4 +89,9 @@ a {
 
   .button {
     padding: 0px;
+  }
+
+  .blog_post {
+    margin-left: 15%;
+    margin-right: 15%;
   }
