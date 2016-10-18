@@ -1,10 +1,41 @@
-.content {
-  background-color: blue;
+html {
+  background-color: #333333;
+}
+
+.container {
+  padding: 10px;
+}
+
+.header {
+  background-color: #FBFBFC;
+  display: flex;
+}
+
+.header {
+  font-size: 3em;
+  white-space: nowrap;
+  text-align: center;
+}
+
+i {
+  padding-top: 43px;
+  padding-left: 35px;
 }
 
 
-@media (min-width: 1000px) {
-  .h1 {
-    background-color: blue;
-  }
+h1 {
+  padding-top: 35px;
+  padding-left: 35px;
+}
+
+.content {
+background-color: #FBFBFC;
+}
+
+.nav {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
 }
