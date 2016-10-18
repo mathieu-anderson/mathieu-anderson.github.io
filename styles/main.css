@@ -1,49 +1,54 @@
 html {
-  background-color: #333333;
+  background-color: #AFAFB0;
 }
 
 .container {
   padding: 10px;
+  font-family: 'Rubik', sans-serif;
 }
 
 .header {
   background-color: #FBFBFC;
   display: flex;
   margin: 10px;
-  font-size: 3em;
-  white-space: nowrap;
-  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
-i {
-  padding-top: 35px;
-  padding-left: 35px;
-}
-
 
 h1 {
-  padding-top: 35px;
-  padding-left: 35px;
+  font-family: 'Oswald', sans-serif;
+  padding-top: 15px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 15px;
 }
 
 .content {
-background-color: #333333;
+background-color: #AFAFB0;
+
+
 }
 
 .image {
   background-color: #FBFBFC;
   text-align: center;
+  padding: 30px 0px 30px 0px;
   margin: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .nav {
-  background-color: #333333;
+  background-color: #AFAFB0;
   display: flex;
   margin: 10px;
 }
 
 .button {
   background-color: #FBFBFC;
+  color: black;
+  margin: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  text-transform: lowercase;
+  font-size: 1em;
 }
 
 a {
