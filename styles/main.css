@@ -5,21 +5,20 @@ html {
 * {
     font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
-    border: 1px solid black;
-}
-
-.header {
 }
 
 .title {
   text-align: center;
-  background-color: #FBFBFC;
   text-align: center;
+  margin: 10px;
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 15px;
+  padding-bottom: 3px;
+  border-top: 2px solid black;
+  border-bottom : 2px solid black;
 }
 
 h2 {
@@ -39,18 +38,21 @@ background-color: #85af92;
 }
 
 .nav {
-  background-color: ##85af92;
+  background-color: #85af92;
   text-align: center;
 }
 
 .nav_button {
   width: 33.33%;
-  background-color: #FBFBFC;
+  font-size: 1.5em;
+  background-color: #85af92;
+  border-bottom : 1px solid black;
 
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:hover {
@@ -62,16 +64,16 @@ a:hover {
   font-family: 'Oswald';
   font-weight: bold;
   font-size: 1.5em;
+  padding: 30px;
+  margin-top: 30px;
+  background-color: blue;
+  text-align: center;
+  background-color: #85af92;
 }
 
 .blog_text {
   line-height: 1.8;
   background-color: #FBFBFC;
   padding: 30px;
-}
-
-@media query (max-width: 850px;){
-.content {
-  width: 50%;
-}
+  margin-top: 30px;
 }
