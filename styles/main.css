@@ -1,5 +1,5 @@
 html {
-  background-color: #AFAFB0;
+  background-color: #85af92;
 }
 
 .container {
@@ -27,22 +27,21 @@ h1 {
 
 .content {
 width: 100%;
-background-color: #AFAFB0;
+background-color: ##85af92;
 margin: auto;
 
 }
 
 .image {
   width: 100%;
-  background-color: #FBFBFC;
+  background-color: ##85af92;
   text-align: center;
   padding: 30px 0px 30px 0px;
   margin: 10px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .nav {
-  background-color: #AFAFB0;
+  background-color: ##85af92;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
