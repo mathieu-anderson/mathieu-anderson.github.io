@@ -42,6 +42,7 @@ h2 {
     padding: 10px;
 }
 
+
 .nav {
     background-color: #85af92;
     text-align: center;
@@ -67,6 +68,10 @@ a {
 
 a:hover {
     color: #555;
+}
+
+a:active {
+  color: #555;
 }
 
 .blog_icon {
