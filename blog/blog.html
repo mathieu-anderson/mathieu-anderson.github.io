@@ -34,6 +34,44 @@
                 <a href="../me/me.html">Me ?</a>
             </div>
         </div>
+
+        <div class="row content_blog">
+            <div class="three columns blog_icon">22/10/2016 TECHNICAL</div>
+            <div class="nine columns blog_text">
+              <a name="blog_9">
+                <h2>JavaScript and Mental calisthenics</h2>
+              </a>
+
+                <p>
+                  <h5>How does JavaScript compare to HTML and CSS?</h5> It's harder. Waaaaay harder. But, to give a more useful answer... HTML and CSS can be compared to some kind of craftsmanship, where you physically feel your product evolving under the successive touches you progressively add to your work. It more or less behaves like you unconsciously expect it to behave. And even when it doesn't, it is usually pretty easy to locate and rectify the problem, as everything is structured in an immediately visible way. JavaScript is actual programming. You are not crafting an object, you are designing processes, things in motion, active. Which means that it is hard to actually take the measure of your progress, and to locate where your code has gone wrong. You have to adapt the way you're thinking to that flow. It can be tricky.
+                </p>
+
+                <p>
+                     <h5>Explain control flow and loops using an example process from everyday life, for example 'waking up' or 'brushing your teeth'.</h5>As I said above, JavaScript, and all other programming alnguages, are things of motion and processes, flow and loops. Let's take doing the dishes, for example. You have a starting state : a pile of dirty dishes. And you have a desired end state : a pile of clean dishes. What your code wants to do is turn the former into the latter. The "flow" of the code, or its sequential order, would go like this : <br>
+                     • Start task<br>
+                     •Go through the dishes to make sure it is dirty (this is the first loop : you look at each dish and define if it is dirty or clean)<br>
+                     • If it is dirty, scrub it until it is clean (the "if" and "until" words are very important, they control the flow of the code by formulating conditions to be fulfilled)<br>
+                     • If it is clean (which it would be after the scrubbing), put it away<br>
+                     • Loop back to the start and find a new dirty dish<br>
+                     • When all dishes are clean, stop the loop<br>
+                     • End task
+                </p>
+
+                <h5> Explain the difference between accessing data from arrays and object literals.</h5> An array stores multiple values is a single place, in a very organized way. When you store a value in an array, it is indexed. This is to say, it is given a number that defines its place in the array. In the array <code>var fruits = ["apple", "banana", "peach"]</code>, "apple" has the index number <code>[0]</code> (computers start counting at 0, not 1!) and "peach" has <code>[2]</code>. To access the values of an array, we would therefore logically call up their index number. If we want to access the value "banana", we would use <code>fruits[1]</code>, calling the second value in the "fruits" array.<br>An object is <i>almost</i> the same, because it also stores multiples values in the same place. But the way it does it is by organizing every element in pairs name:value, like so : <code>var groceryList {fruits: ["apple", "banana", "peach"], meat: "beef", drink: "Sprite"}</code>. Every "name" ("fruits", "meat", etc) has its value ("beef", "Sprite"). It can even have an array as value (["apple", "banana", "peach"]). And you'll notice that an object literal uses curly braces {} and not brackets []. But the big difference is that objects literals have no index : we can't access the values this way. Instead, we use the "names" as keys to the value. For example, to access the value "beef, we won't write <code>groceryList[1]</code>, but <code>groceryList[meat]</code>!
+
+                  </p>
+                  <p> <h5>Explain what functions are and why they are useful.</h5> Function are essentially a lazy man's tool. They are designed to execute a chunk of code every time they are invoked, like magic spells. You create them by giving them a name and defining their parameters (the variables it will work with), and then put the code you want executed between curly braces {}. Here is a function called repeat that will print out your argument three times every time you invoke it : <code>function repeat(parameter){console.log(parameter + " " + parameter + " " + parameter );}</code> <br>
+                  <code>// invoking the function<br>
+                    repeat("bla");<br>
+                    //result in console<br>
+                    bla bla bla</code><br>
+                    Of course, there are many, many ways to use this basic capability of JavaScript, but what is important to rmember is that a function can be made every time something gets a little too repetitive during coding. A golden rule is to <b>never repeat yourself</b>!
+
+                  </p>
+
+            </div>
+        </div>
+
         <div class="row content_blog">
             <div class="three columns blog_icon">20/10/2016 CULTURAL</div>
             <div class="nine columns blog_text">
@@ -42,11 +80,11 @@
               </a>
 
                 <p>
-                  What did you learn from your 'mindfulness conversation'? How did the other person find it? I found it very strange, but not as much as the other person I asked to experiment with. The "loop" part was especially enlightening : it made me understand of how little attention we ordinarily pay other people's conversation, and instead jump to conclusion and interpret things to fit with our ordinary thought patterns.
+                  <h5>What did you learn from your 'mindfulness conversation'? How did the other person find it?</h5> I found it very strange, but not as much as the other person I asked to experiment with. The "loop" part was especially enlightening : it made me understand of how little attention we ordinarily pay other people's conversation, and instead jump to conclusion and interpret things to fit with our ordinary thought patterns.
                 </p>
 
                 <p>
-                    Which of the three suggested techniques will you use to sustain your practice? "Meditation circuit training" is immensely seductive to me, especially as I have already experienced its power in the physical realm. And, as an avid gamer, taking it like a game, trying to beat my high-score, is also quite attractive.
+                    <h5>Which of the three suggested techniques will you use to sustain your practice?</h5> "Meditation circuit training" is immensely seductive to me, especially as I have already experienced its power in the physical realm. And, as an avid gamer, taking it like a game, trying to beat my high-score, is also quite attractive.
                 </p>
 
                 <p>The way Meng talked about the initial enthusiasm and its progressive decay as the practice of mindfulness is abandoned really resonated with me, as it was the case with my own practice, several times. I hope that this time I will be able to keep at it long enough for it to become "self-sustainable". I'll certainly try again if I fail, though!
@@ -62,7 +100,7 @@
               </a>
 
                 <p>
-                  How did the 'process over product' concept affect the way you tackled the site redesign and rebuild? It envouraged me to experiment <b>a lot</b>. To try every way I could think of to achieve the desired result. And, most importantly, it got me to step back from little details that jarred with my original project, and just let them go, to focus my attention to another core feature. However, I think it also got me to sometimes be blind to the <b>simple solutions</b>. I tried to implement every scrap of code I had found interesting while reading and viewing the course's material. Most notably, I got obsessed with making flex-boxes work. It made me actively work against the Skeleton framework, rewriting a lot of CSS to change its structure. Which was frustrating, complex, and ultimately didn't get great results (even if it got <i>functional</i> ones). I do think I have learned a lot, though. Which is, in my opinion, the most important thing when putting 'process over product'.
+                  <h5>How did the 'process over product' concept affect the way you tackled the site redesign and rebuild?</h5> It envouraged me to experiment <b>a lot</b>. To try every way I could think of to achieve the desired result. And, most importantly, it got me to step back from little details that jarred with my original project, and just let them go, to focus my attention to another core feature. However, I think it also got me to sometimes be blind to the <b>simple solutions</b>. I tried to implement every scrap of code I had found interesting while reading and viewing the course's material. Most notably, I got obsessed with making flex-boxes work. It made me actively work against the Skeleton framework, rewriting a lot of CSS to change its structure. Which was frustrating, complex, and ultimately didn't get great results (even if it got <i>functional</i> ones). I do think I have learned a lot, though. Which is, in my opinion, the most important thing when putting 'process over product'.
                 </p>
 
                 <p>
@@ -70,10 +108,10 @@
                 </p>
 
                 <p>
-                  What did you think about meditation before reading chapter 2? I thought it was a powerful way of establishing a more healthy mind, of getting better at letting go of stressful ruminations and vicious circles of noxious thoughts.</p>
-                    <p>What new things have you learnt about meditation? I have been made aware that, more than a cure, meditation can be a vaccine against the ills I described above. That it actually is not only a maintenance job of the mind, but also an upgrade. Assuming regular and dedicated practice, of course! </p>
-                    <p>Did any of the suggested meditation techniques stand out to you? I am very intrigued by the "optimal" meditation position. I tried assuming it, but my legs are just too stiff, and my back too bent! The other techniques I was already familiar with, most notably the cycle breathing -> notice the mind strayin -> gently bring it back to the breathing. </p>
-                    <p>Any other musings? Presenting happiness as the "default" state of the mind makes absolute sense to me. I think this book is really good at formulating things I kind of already thought, but in a very efficient and striking way. Very satisfying! I'm also pretty impressed by the review of the scientific literature presented in this chapter. It really motivates me to keep practicing mindfulness daily!</p>
+                  <h5>What did you think about meditation before reading chapter 2?</h5> I thought it was a powerful way of establishing a more healthy mind, of getting better at letting go of stressful ruminations and vicious circles of noxious thoughts.</p>
+                    <p><h5>What new things have you learnt about meditation?</h5> I have been made aware that, more than a cure, meditation can be a vaccine against the ills I described above. That it actually is not only a maintenance job of the mind, but also an upgrade. Assuming regular and dedicated practice, of course! </p>
+                    <p><h5>Did any of the suggested meditation techniques stand out to you?</h5> I am very intrigued by the "optimal" meditation position. I tried assuming it, but my legs are just too stiff, and my back too bent! The other techniques I was already familiar with, most notably the cycle breathing -> notice the mind strayin -> gently bring it back to the breathing. </p>
+                    <p>Presenting happiness as the "default" state of the mind makes absolute sense to me. I think this book is really good at formulating things I kind of already thought, but in a very efficient and striking way. Very satisfying! I'm also pretty impressed by the review of the scientific literature presented in this chapter. It really motivates me to keep practicing mindfulness daily!</p>
 
             </div>
         </div>
@@ -120,18 +158,18 @@
                 <h2>Responsive griddiness</h2>
 </a>
                 <p>
-                    What is grid based design? You remember how the Internet is all boxes? Well, grid based design was invented to neatly arrange these boxes in exactly the way we want them. It is a CSS design philosphy, based on the the box model. Concretely, this means
+                    <h5>What is grid based design? You remember how the Internet is all boxes?</h5> Well, grid based design was invented to neatly arrange these boxes in exactly the way we want them. It is a CSS design philosphy, based on the the box model. Concretely, this means
                     dividing our web page in columns (usually 12) and rows (usually occupying 100% of the width of the page). With these two variables, we can do almost any kind of layout.
                 </p>
 
                 <p>
-                    Whats all the hype about responsive webpages? In today's world, only half the page views you get are from computer (desktop or laptop), with traditionnal 16/9, 1080p displays. The other half is made up of all the tablets, phones and more obscure mobile
+                    <h5>Whats all the hype about responsive webpages?</h5> In today's world, only half the page views you get are from computer (desktop or laptop), with traditionnal 16/9, 1080p displays. The other half is made up of all the tablets, phones and more obscure mobile
                     devices used to browse the Web. Responsive design seeks to provide an experience of the same quality for any device, and that means gracefully and dynamically adapting to any screen size, and any aspect ratio.
                 </p>
 
                 <p>
-                    What is semantic structure?
-                    <br>Semantic literally means "meaning". Anything that is "semantic" seeks to be understandable by humans in an explicit sense, and not through knowledge of esoteric rules. In the case of semantic structure, it refers to the naming
+                    <h5>What is semantic structure?</h5>
+                    Semantic literally means "meaning". Anything that is "semantic" seeks to be understandable by humans in an explicit sense, and not through knowledge of esoteric rules. In the case of semantic structure, it refers to the naming
                     of specific elements in the HTML structure : the "<b>h</b>eadlines" <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code> and <code>&lt;h3&gt;</code>; of decreasing importance or the "<b>p</b>aragraph" <code>&lt;p&gt;</code>, for example.
                     They are different in that they are not generic division of space, but have a meaning embedded into their code, and should be used accordingly.
                 </p>
@@ -145,12 +183,12 @@
                 <h2>Boxifying everything</h2>
 </a>
                 <p>
-                    What is meant by boxifying design? Boxifying is the act of taking a design and turning it into a series of boxes through the tools of HTML and CSS. Everything on the Internet can be reduced to a box, whether large or small. In fact, most boxes on the
+                    <h5>What is meant by boxifying design?</h5> Boxifying is the act of taking a design and turning it into a series of boxes through the tools of HTML and CSS. Everything on the Internet can be reduced to a box, whether large or small. In fact, most boxes on the
                     internet are inside larger boxes, and contain smaller boxes : every web page is a matryoshka doll!
                 </p>
 
                 <p>
-                    What is the box model? The box model is a shorthand used to describe the design elements that define every HTLM box. From larger to smaller, it goes : margins > borders > padding > content. Each one of these elements can be modified through CSS to achieve
+                    <h5>What is the box model?</h5> The box model is a shorthand used to describe the design elements that define every HTLM box. From larger to smaller, it goes : margins > borders > padding > content. Each one of these elements can be modified through CSS to achieve
                     the desired design.
                 </p>
 
@@ -194,22 +232,22 @@
                 <h2>Time and habits management</h2>
 </a>
                 <p>
-                    which timebox and habits techniques did you try? I've never used any timebox techniques consciously, but I feel that the pomodoro technique is something I unconsciously applied to a lot of work I did during my studies, especially when writing especially
+                    <h5>which timebox and habits techniques did you try?</h5> I've never used any timebox techniques consciously, but I feel that the pomodoro technique is something I unconsciously applied to a lot of work I did during my studies, especially when writing especially
                     long papers. Pausing for 10 minutes avery half hour sounds exaactly like my workflow whe doing that kind of tasks. I don't know if it will apply to dev work though! I also tried to establish a meditation habit several times, but it
                     always tapered off at some point. I'll keep trying until I man age to get it, though!
                 </p>
 
                 <p>
-                    What did you find interesting? The most interesting element I encountered was the "Trigger" concept for creating habit. I think it was the one thing I missed to actually make it work, and the one thing that made things work unconsciously!
+                    <h5>What did you find interesting?</h5> The most interesting element I encountered was the "Trigger" concept for creating habit. I think it was the one thing I missed to actually make it work, and the one thing that made things work unconsciously!
                 </p>
 
                 <p>
-                    What worked for you? A while ago, I managed to create a habit of running with the trigger "Go running immediately after you wake up" a while ago, without being aware of the "trigger" aspect. Very interesting to know that it was this element that made
+                    <h5>What worked for you?</h5> A while ago, I managed to create a habit of running with the trigger "Go running immediately after you wake up" a while ago, without being aware of the "trigger" aspect. Very interesting to know that it was this element that made
                     it so effective.
                 </p>
 
                 <p>
-                    Which will you experiment further with? I will definitely try to get more into the habit of timeboxing tasks with the pomodoro technique, and using the breaks to get into the habit of meditating. I actually have downloaded the Headspace app! Will use
+                    <h5>Which will you experiment further with?</h5> I will definitely try to get more into the habit of timeboxing tasks with the pomodoro technique, and using the breaks to get into the habit of meditating. I actually have downloaded the Headspace app! Will use
                     it for the first time after I push this blog entry :p
                 </p>
 
@@ -223,27 +261,27 @@
                 <h2>Fireside chat with Shareef</a></h2>
 </a>
                 <p>
-                    What's your take on the DBC/EDA experience? I personally take it as the chance to be put in an environment giving me the highest chance of actually learning how to build web projects. The "guinea pig" image really resonated with me : I absolutely view
+                    <h5>What's your take on the DBC/EDA experience?</h5> I personally take it as the chance to be put in an environment giving me the highest chance of actually learning how to build web projects. The "guinea pig" image really resonated with me : I absolutely view
                     this experience as putting myself in this very peculiar environment, and see how I react. Hopefully, I will react as I predicted, and learn a lot!
                 </p>
 
                 <p>
-                    What are your impressions? My impressions are a bit skewed by the fact that I'm joining a cohort late. So, for the moment, I haven't been able to experience much of the "group" feeling. I am however very pleased by the global worflow I've experienced,
+                    <h5>What are your impressions?</h5> My impressions are a bit skewed by the fact that I'm joining a cohort late. So, for the moment, I haven't been able to experience much of the "group" feeling. I am however very pleased by the global worflow I've experienced,
                     self starting and working with waffle and git.
                 </p>
 
                 <p>
-                    How do you see yourself engaging with this type of culture? I mostly see myelf as participating to discussions and projects, sharing and learning new stuff all the time, even and mostly after I graduate. I'm looking forward to helping people on Stackoverflow,
+                    <h5>How do you see yourself engaging with this type of culture?</h5> I mostly see myelf as participating to discussions and projects, sharing and learning new stuff all the time, even and mostly after I graduate. I'm looking forward to helping people on Stackoverflow,
                     for example :p
                 </p>
 
                 <p>
-                    Have your expectations of EDA changed? If so, how? It hasnt changed at all. I had researched it quite extensively beforehand, and everything is pretty much as I expected it to be. Even better, as I was given an individual option to start early when some
+                    <h5>Have your expectations of EDA changed?</h5>If so, how? It hasnt changed at all. I had researched it quite extensively beforehand, and everything is pretty much as I expected it to be. Even better, as I was given an individual option to start early when some
                     conflicts appeared after the delaying of my original cohort.
                 </p>
 
                 <p>
-                    Are you excited to participate in this kind of learning environment? Does it make you nervous? I am absolutely excited. I'm looking forward to spending time on my computer, making things happen, being a "creator"! But it does make me nervous : I hope
+                    <h5>Are you excited to participate in this kind of learning environment? Does it make you nervous?</h5> I am absolutely excited. I'm looking forward to spending time on my computer, making things happen, being a "creator"! But it does make me nervous : I hope
                     I'll have the energy necessary for it!
                 </p>
             </div>
