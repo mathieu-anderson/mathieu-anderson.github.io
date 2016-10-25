@@ -95,9 +95,6 @@ a:active {
     background-color: #FBFBFC;
     padding: 30px 30px 5px 30px;
     margin-top: 30px;
-    -webkit-box-shadow: 10px 9px 31px -3px rgba(0,0,0,0.6);
--moz-box-shadow: 10px 9px 31px -3px rgba(0,0,0,0.6);
-box-shadow: 10px 9px 31px -3px rgba(0,0,0,0.6);
 }
 
 p img{
