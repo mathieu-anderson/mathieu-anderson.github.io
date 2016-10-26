@@ -24,7 +24,7 @@ h1 {
 
 h3 {
   font-family: 'Oswald', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 h2 {
@@ -95,6 +95,12 @@ a:active {
     background-color: #FBFBFC;
     padding: 30px 30px 5px 30px;
     margin-top: 30px;
+}
+
+.blog_text a {
+  border-top: 1px solid black;
+  border-bottom : 1px solid black;
+
 }
 
 p img{
