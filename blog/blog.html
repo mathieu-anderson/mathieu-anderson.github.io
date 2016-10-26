@@ -38,8 +38,55 @@
         <div class="row content_blog">
             <div class="three columns blog_icon">26/10/2016 CULTURAL</div>
             <div class="nine columns blog_text">
+              <a name="blog_11">
+                <h2>Problem solving</h2>
+              </a>
+
+                <p>
+                  <h5>The time I got blocked on the Profile lookup challenge of Freecodecamp basic JS course</h5>
+                  This course had realy unexpected difficulty spikes, namely with the <a href="https://www.freecodecamp.com/challenges/record-collection">Record collection</a> and the <a href="https://www.freecodecamp.com/challenges/profile-lookup">Profile lookup</a> challenges. Both demanded "complex" articulations of the "simple" principles I had been learning about. It is very apparent in the Profile lookup challenge, which called for the use of a <code>for</code> loop inside a <code>for</code> loop. For some reason, I had a very hard time to wrap my head around exactly how a loop inside a loop works. I kept trying things, and nothing worked as I expected it to work. This is the basis of all frustration : you expect something from the world, and it gives you something else (or nothing!). This is why devotes Mac, Linux or Windows users forced to use another platform are so vocally displeased : they keep expecting the system to behave a certain way, and keep getting thwarted. It was through an actual conversation with a dev friend that I was able to grasp how, with nested loops, the inner loop must finish before the outer loop increments. I bounced all my ideas off her, and she explained to me why they were wrong, guiding me to the right way to think about the problem. Being able to have a reliable human source of information, not just written documentation, was incredibly valuable. I felt comfortable in my ignorance and confident in my ability to learn while we were conversing. It helped me tremendously.
+                </p>
+
+                <p>
+                    <h5>The time I solved a problem in an elegant way</h5> Well, I don't think it would qualify as "elegant". But it definitely felt like the proper process of developing solutions with code, and appropriately handling a bug. It was during the "Event-driven DOM modifications" challenge. When I had set up my array of dots, and laid out my conditionnals for incrementing the score through a loop, I was quite pleased. I had successfully written down a loopy solution! And it came naturally! But when I saved and reloaded the page... it didn't work. Nothing worked. Even the code that had worked previously. I was very confident in my expressions, though! It could not be my solution, but the syntax. So, I used the debugging technique I had just learned the day before, and looked through the errors. Yes, it does look like the error message is syntax related! And it looks like it is with the last expression... Oooh! Of course! My last statement can't be <code>else</code>, it has a condition! I changed it to <code>else if</code>, and everything worked. Joy! I learned how to keep calm in the face of unexpected failure, and to methodically work through it. It felt incredibly satisfying.
+                </p>
+
+                <p><h5> What did you take away from the "My Emotions are Not Me" section?</h5>I wholeheartedly agree with what is expressed in this section. It is very easy to get engulfed by negative emotions when we believ them to be the fabric of our being. But getting control over them czn be as simple, and sometimes as difficult, as taking a small step on the side ("faire un pas de côté" in French). This small step dissociates us from the emotion, which we can then acknowledge fully, and process more easily.
+                  </p>
+
+                  <h5>About the techniques and process...</h5>
+                  <ul>
+                    <li>Pseudocode : I love it. It realy helps me lay out the structure of the code I need, and writing my thoughts down clarify them.</li>
+                    <li>Trying something : I tend to jump to this solution a bit too often, and end up just mucking about randomly, hoping to stumble on a solution. It worked exactly once. I should refrain from it if I don't have a proper plan, I think.</li>
+                    <li>Rubber ducky method : I like it, but it works best when I'm actually talking to a real person. They don't have to be knowledgeable about the subject (even if it helps!), but the way I frame my thoughts when trying to explain my problem is very profitable. I kind of use the Slack channel as my rubber ducky, in fact :p</li>
+                    <li>Reading error messages : this is what lead to my "elegant solution" moment. I am very receptive to this, as it often helps me define if my whole approach is wrong, or if it's only a matter of syntax.</li>
+                    <li>Reading error messages : this is what lead to my "elegant solution" moment. I am very receptive to this, as it often helps me define if my whole approach is wrong, or if it's only a matter of syntax.</li>
+                    <li>Console.logging : it was a huuuuge help in undertanding how loops worked. I will definitely use it more in the future.</li>
+                    <li>Googling : I think this is a solution that I will employ more once I am really familiar with the technology. At the moment if I google something, I will inevitably stumble upon a moutain of pre-requisited information to process in order to properly understand what I'm reading. But it is bound to become my number one problem solver.</li>
+                    <li>Asking your peers for help : this is really akin to the rubber ducky method, for me :p Exchanging difficulties, understanding you're not the only one struggling through that challenge, is help in and of itself.</li>
+                    <li>Asking coaches for help : this would actually be my favourite way of approaching a frustrating problem I'm stuck on if I could have a dedicated 24/7 coach. I love nothing more than to share my difficulties with a knowledgeable person, and have them guide my thought process until I naturally come to the solution by myself. But it is an extravagant luxury!</li>
+                    <li>Improving your process with reflection : I think this is the "softest" and most critical tool to problem solving of all the list. The more you struggle through problems, the more your mind get used to them, and the less problems you have. This is done through reflection, and through the peculiar "brewing" that occurs when you regularly apply yourself to learning a new skill. EDA is a pretty intense learning experience, so this "brewing" process is a bit cut short, but it is catalysed by the perpetual challenge of keeping up!</li>
+                  </ul>
+
+                  <p><h5>What does <code>.map()</code> do?</h5>
+                  It is a simple way of applying the same change to every value stored inside an array, without deleting the old values, and without changing their order. <code>.map()</code> actually creates a whole new array after applying the changes specified to each and every value of the old array. In practice, it looks like this :
+                  <code>var newArray = oldArray.map(myMapFunction(argument))</code>.
+                  This code takes every single value indexed in my <code>oldArray</code> and uses <code>myMapFunction</code> on them to create my <code>newArray</code>. It works because the <code>argument</code> of <code>myMapFunction</code> will automatically be set to each of the elements of the <code>oldArray</code>! </p>
+
+                  <p><h5>What does <code>.filter()</code> do?</h5>
+                  Contrary to <code>.map()</code>, the name is very self-explanatory : it applies a conditionnal filter to an array, and produces a new array populated with the value that passed the test (returned <code>true</code>). It looks like this <code>var filteredArray = unfilteredArray.filter(myFilterFunction)</code>. Just like <code>.map()</code>, the argument of <code>myFilterFunction</code> is automatically set to the each of the values of <code>unfilteredArray</code>. If we have <code>function myFilterFunction(argument) {argument = 0;}</code>, then <code>filteredArray</code> will only have the values from <unfilteredArray</code> that are 0.</p>
+
+                  <p><h5>What does <code>.reduce()</code> do?</h5>
+                  It's not quite as obvious as <code>.filter()</code>, but not quite as obscured as <code>.map()</code> : it take the values of an array, and reduce them to one value. You can add all the value to get their sum, or you can append a series of strings to one another and get one big string. The way it works is that it takes each value of an array from left to right, executes a chosen function on them, and return the result.</p>
+
+            </div>
+        </div>
+
+        <div class="row content_blog">
+            <div class="three columns blog_icon">26/10/2016 CULTURAL</div>
+            <div class="nine columns blog_text">
               <a name="blog_10">
-                <h2> Looking inside (<i>Search Inside Yourself</i>, Chapter 4)</h2>
+                <h2>Looking inside (<i>Search Inside Yourself</i>, Chapter 4)</h2>
               </a>
 
                 <p>
