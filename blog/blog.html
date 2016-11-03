@@ -38,6 +38,106 @@
         </div>
 
         <div class="row content_blog">
+            <div class="three columns blog_icon">04/11/2016 TECHNICAL</div>
+            <div class="nine columns blog_text">
+              <a name="blog_12">
+                <h2>Language and signs</h2>
+              </a>
+                <p>
+                  Punctuation has a very specific role in JavaScript, or indeed any programming language. Here are the uses for the most important punctuation signs.
+                </p>
+
+                  <h5> Parentheses <code>()</code></h5>
+                  <p>
+                    Parentheses are mostly used to define parameters, arguments and conditions for functions, loops, conditional statements and methods. But they are also used to group operations together to organize their priorities.
+                  </p>
+                  <ul>
+                    <li>
+                      Define a function's arguments :<br /> <code>var myExample = function(arg){return arg * 2);}</code>
+                    </li>
+                    <li>
+                      Execute a function : <br /> <code>myExample(2);</code>
+                    </li>
+                    <li>
+                      Define a loop's conditions : <br /> <code>for (var i = 0; i < 10; i++){console.log(i);}</code>
+                    </li>
+                      <li>
+                        Define a conditional statement :<br />  <code>if (i < 10){return i;}</code>
+                      </li>
+                    <li>
+                      Organize the priorities of arithmetic operations : <br /> <code>var total = (1+2) + (2+3);</code>
+                    </li>
+                  </ul>
+
+
+                  <h5> Brackets <code>[]</code></h5>
+                  <p>
+                    Brackets are all about organization of data. They define arrays and are used to access values through their index or name.
+                  </p>
+                  <ul>
+                    <li>
+                      Define an array : <br /> <code>var arr = [1,2,3];</code>
+                    </li>
+                    <li>
+                      Access an array's value through its index number :<br />  <code>var getOne = arr[0];</code>
+                    </li>
+                    <li>
+                      Access an object's property value through its name :<br />  <code>var obj = {number1: "one", number2: "two"};</code>
+                      <br /><code>var getOne = obj["number1"];</code>
+                    </li>
+                  </ul>
+
+                  <h5> Braces <code>{}</code></h5>
+                <p>
+                  Braces define blocks of code that are mostly independent one from another. Code between braces is usually a cohesive ensemble. Braces play a large role in defining the scope of variables : one that is defined inside braces can only be accessed there. Some examples used may seem familiar : they were already used in the parentheses section. This is because braces and parentheses very often go together : defining the condition (with <code>()</code>) in which the actions will be executed (with <code>{}</code>). We also see our object from the bracket section again!
+                  <ul>
+                    <li>
+                      Define the code a function executes : <br /><code>var myExample = function(arg){return arg * 2);}</code>
+                    </li>
+                    <li>
+                      Define the code executed every time a loop repeats itself : <br />
+                      <code>for (var i = 0; i < 10; i++){console.log(i);}</code>
+                    </li>
+                    <li>
+                      Define the code executed if a conditional statement evaluates to <code>true</code> : <br />
+                      <code>if (i < 10){return i;}</code>
+                    </li>
+                    <li>
+                      Define an object (literal notation): <br />  <code>var obj = {number1: "one", number2: "two"};</code>
+                    </li>
+                  </ul>
+                </p>
+
+                  <h5> Single quotes <code>''</code> and double quotes <code>""</code></h5>
+                  <p>
+                    In most cases, single and double quotes have exactly the same role : to define strings. The use of one or the other is down to personnal preference. However, we will see some example in which both are necessary. And also an example where they are used to access an object property's value.
+                  </p>
+                  <ul>
+                    <li>
+                      Define a string : <br />
+                      <code>var hello = "Hello World";</code> <br />
+                      <code>var hello2 = 'Hello World';</code>
+                    </li>
+                    <li>
+                      Define a string that contains single or double quotes, three posibilities : <br />
+                      <code>var bonjour = "'Bonjour' World"</code><br />
+                      <code>var bonjour2 = '"Bonjour" World'</code><br />
+                      <code>var bonjour3 = "\"Bonjour\" World"</code>
+
+                    </li>
+                    <li>
+                      Access the value of an object's property : <br />
+                    <code>var obj = {number1: "one", number2: "two"};</code>
+                    <br /><code>var getOne = obj["number1"];</code>
+
+                    </li>
+                  </ul>
+
+
+            </div>
+        </div>
+
+        <div class="row content_blog">
             <div class="three columns blog_icon">26/10/2016 CULTURAL</div>
             <div class="nine columns blog_text">
               <a name="blog_11">
