@@ -1,19 +1,16 @@
 html {
-    background-color: #85af92;
+    background-image: url(../images/mochaGrunge.png);
 }
 
 * {
-
     box-sizing: border-box;
 }
-
 
 .title {
     text-align: center;
     text-align: center;
     margin: 10px;
 }
-
 
 h1 {
     font-family: 'Oswald', serif;
@@ -25,8 +22,8 @@ h1 {
 }
 
 h3 {
-  font-family: 'Oswald', serif;
-  font-size: 1.5em;
+    font-family: 'Oswald', serif;
+    font-size: 1.5em;
 }
 
 h2 {
@@ -35,23 +32,18 @@ h2 {
 }
 
 h5 {
-  font-style: italic;
-  font-size: 1.3em;
+    font-style: italic;
+    font-size: 1.3em;
 }
 
-.content {
-    background-color: #85af92;
-}
+.content {}
 
 .image {
-    background-color: #85af92;
     text-align: center;
     padding: 10px;
 }
 
-
 .nav {
-    background-color: #85af92;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-weight: light;
@@ -59,17 +51,14 @@ h5 {
 
 .nav_button {
     width: 33.33%;
-    font-size: 1.5em;
-    background-color: #85af92;
+    font-size: 1.8em;
     border-bottom: 1px solid black;
     font-family: 'Oswald', sans-serif;
     font-weight: lighter;
 }
 
 p a {
-
-  border-bottom : 1px dotted black;
-
+    border-bottom: 1px dotted black;
 }
 
 a {
@@ -82,7 +71,7 @@ a:hover {
 }
 
 a:active {
-  color: #555;
+    color: #555;
 }
 
 .blog_icon {
@@ -91,7 +80,6 @@ a:active {
     font-size: 2.2em;
     margin-top: 50px;
     text-align: center;
-    background-color: #85af92;
 }
 
 .blog_text {
@@ -103,15 +91,12 @@ a:active {
 }
 
 .blog_text a {
-
-  border-bottom : 0.px solid black;
-
+    border-bottom: 0.px solid black;
 }
 
-p img{
-  max-height: 280px;
-  box-sizing: border-box;
-  display: flex;
-  margin: 3%
-
-  }
+p img {
+    max-height: 280px;
+    box-sizing: border-box;
+    display: flex;
+    margin: 3%
+}
