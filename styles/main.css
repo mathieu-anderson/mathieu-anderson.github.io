@@ -1,9 +1,11 @@
 html {
-    background-image: url(../images/mochaGrunge.png);
+    background-image: url(../images/grunge_wall.png);
+
 }
 
 * {
     box-sizing: border-box;
+
 }
 
 .title {
@@ -29,6 +31,7 @@ h3 {
 h2 {
     font-weight: bold;
     font-size: 2em;
+      color: #000000;
 }
 
 h5 {
@@ -63,15 +66,15 @@ p a {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 a:hover {
-    color: #555;
+    color: #000000;
 }
 
 a:active {
-    color: #555;
+    color: #000000;
 }
 
 .blog_icon {
@@ -80,9 +83,11 @@ a:active {
     font-size: 2.2em;
     margin-top: 50px;
     text-align: center;
+
 }
 
 .blog_text {
+    color: #555;
     line-height: 1.8;
     background-color: #FBFBFC;
     padding: 30px 30px 5px 30px;
