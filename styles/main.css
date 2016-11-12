@@ -70,7 +70,7 @@ a {
 }
 
 a:hover {
-    color: #000000;
+  color: #555;
 }
 
 a:active {
@@ -96,7 +96,7 @@ a:active {
 }
 
 .blog_text a {
-    border-bottom: 0.px solid black;
+    border-bottom: 1px dotted black;
 }
 
 p img {
