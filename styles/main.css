@@ -8,6 +8,10 @@ html {
 
 }
 
+::selection{
+  background-color: #bababa ;
+}
+
 .title {
     text-align: center;
     text-align: center;
