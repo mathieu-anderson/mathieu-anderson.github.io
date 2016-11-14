@@ -103,6 +103,21 @@ a:active {
     border-bottom: 1px dotted black;
 }
 
+span {
+  border-bottom: 1px solid black;
+}
+
+#blue {
+  border-bottom: 0px;
+  color: white;
+  background-color: #3297FD;
+}
+
+#gray {
+  border-bottom: 0px;
+  background-color: #bababa;
+}
+
 p img {
     max-height: 280px;
     box-sizing: border-box;
