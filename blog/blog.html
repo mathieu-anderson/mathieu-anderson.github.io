@@ -56,7 +56,7 @@
                   The global scope is exactly that : global. The variables declared in the global scope are accessible throughout all the code, without exceptions. They are usually placed at the top of the document, out of a function. But be careful! If you name a variable without declaring it with <code>var</code>, it will become global however you place it in the document!
                   <br />
                   <br />
-                  The local scope is slightly more tricky. Every new function creates a new local scope : variables declared between the <code>{}</code> elements of a function are only ever accessible there. But there is a catch : any nested function inside those initial <code>{}</code> will also be inside that local scope AND define a new local scope of their own. An all of this is still enclosed inside the global scope.
+                  The local scope is slightly more tricky. Every new function creates a new local scope : variables declared between the <code>{}</code> elements of a function are only ever accessible there. But there is a catch : any nested function inside those initial <code>{}</code> will also be inside that local scope AND define a new local scope of their own. And all of this is still enclosed inside the global scope.
                   <br />
                   <br />
                   It is just like Matryoshka doll : the global scope is the largest doll, while local scopes are all the smallest dolls inside. The catch is that there isn't necessarily only one doll inside the previous, larger doll! It can become quite confusing, which is why it is important to be very rigorous when defining the scope of your variables, to avoid unforeseen conflicts and bugs.
