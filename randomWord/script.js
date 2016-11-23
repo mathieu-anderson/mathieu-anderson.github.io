@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     $.ajax({
         type: "GET",
-        url: "http://www.setgetgo.com/randomword/get.php?len=8",
+        url: "http://www.setgetgo.com/randomword/get.php",
         dataType: "jsonp",
         jsonpCallback: "randomWord",
         success: function(data) {
